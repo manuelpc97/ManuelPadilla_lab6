@@ -95,7 +95,7 @@ int main(int argc, char*argv[]){
 					cout<<"Opcion incorrecta"<<endl;
 				}
 			}else{
-				cout<<"El usuario no existe."<<endl;
+				cout<<"El usuario no existe o  la contraseña es incorrecta."<<endl;
 			}
 		}else if(menu==3){
 			cout<<"Ingrese el nombre del usuario que desea eliminar"<<endl;
