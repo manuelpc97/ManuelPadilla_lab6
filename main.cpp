@@ -32,8 +32,18 @@ int main(int argc, char*argv[]){
 			cin>>nombre;
 			cout<<"Ingrese su contraseña: ";
 			cin>>contra;
-			user usuario(nombre, contra);
-			personas.push_back(usuario);		
+			for(int i = 0; i < personas.size(); i++){
+				if(personas[i].getName().compare(nombre)==0){
+					verificar = true;
+				}
+			}
+
+			if(verificar == false){
+				user usuario(nombre, contra);
+				personas.push_back(usuario);
+			}else{
+				cout<<"Este nombre de usuario ya existe"<<endl;
+			}		
 		}else if(menu==2){
 			cout<<"-----Log in------"<<endl;
 			cout<<"Ingrese su nombre de usuario: ";
