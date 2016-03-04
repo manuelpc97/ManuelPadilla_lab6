@@ -143,13 +143,13 @@ int main(int argc, char*argv[]){
 				cout<<"El juego no existe"<<endl;
 			}
 		}else if(menu == 6){
-			cout<<"----Usuarios-----"<<endl;
+			cout<<"***************************Usuarios***********************************"<<endl;
 			for(int  i = 0; i < personas.size(); i++){
 				cout<<i+1<<"--"<<personas[i].toString()<<endl;
 				cout<<"************************"<<endl;
 			}
 		}else if(menu == 7){
-			cout<<"--------Juegos-----"<<endl;
+			cout<<"*********************************Juegos*********************************"<<endl;
 			for(int i = 0; i<juegos.size(); i++){
 				cout<<juegos[i].toString()<<endl;
 				cout<<"***************************************"<<endl;

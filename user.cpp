@@ -19,9 +19,13 @@ void user::setPassword(string contra){
 string user::toString(){
 	stringstream ss;
 	ss<<"nombre: "<<name<<"\n"<<"Contraseña: "<<password<<"\n";
-	ss<<"Juegos de "<<name<<"\n";
-	for(int i = 0; i< games.size(); i++){
-		ss<<games[i]<<"\n";
+	if(games.size()==0){
+		ss<<name<<" no tiene juegos"<<"\n";
+	}else{
+		ss<<"Juegos de "<<name<<"\n";
+		for(int i = 0; i< games.size(); i++){
+			ss<<games[i]<<"\n";
+		}
 	}
 	return ss.str();
 }
