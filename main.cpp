@@ -74,6 +74,7 @@ int main(int argc, char*argv[]){
 						cout<<"El juego no existe"<<endl;
 					}								
 				}else if(menu2 == 2){
+					cout<<personas[pos].toString()<<endl;
 					cout<<"Ingrese la id del juego: "<<endl;
 					cin>>id;
 					if(personas[pos].deleteGame(id)){

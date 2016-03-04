@@ -24,7 +24,7 @@ string user::toString(){
 	}else{
 		ss<<"Juegos de "<<name<<"\n";
 		for(int i = 0; i< games.size(); i++){
-			ss<<games[i]<<"\n";
+			ss<<"Id del juego: "<<games[i]<<"\n";
 		}
 	}
 	return ss.str();
