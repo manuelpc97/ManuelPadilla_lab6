@@ -54,7 +54,7 @@ bool user::deleteGame(int id){
 
 
 bool user::isValidPassword(string word){
-	if(word == password){
+	if(password.compare(word)==0){
 		return true;
 	}else{
 		return false;
@@ -62,7 +62,7 @@ bool user::isValidPassword(string word){
 }
 		
 bool user::differName(string n){
-	if(name == n){
+	if(name.compare(n) == 0){
 		return true;
 	}else{
 		return false;
